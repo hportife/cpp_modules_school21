@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /Users/hportife/untitled
+C:\Windows\system32\wsl.exe --distribution Ubuntu-20.04 --exec /bin/bash -c "export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd /mnt/c/Users/drag-/Documents/work_dir/cpp_modules_school21/cpp_module_00/ex02/cmake-build-debug && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' /mnt/c/Users/drag-/Documents/work_dir/cpp_modules_school21/cpp_module_00/ex02; exitcode=$?; sleep 0.001; (exit $exitcode)"
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/hportife/untitled/cmake-build-debug
+-- Build files have been written to: /mnt/c/Users/drag-/Documents/work_dir/cpp_modules_school21/cpp_module_00/ex02/cmake-build-debug
