@@ -1,16 +1,15 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
   )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/c/Users/drag-/Documents/work_dir/cpp_modules_school21/cpp_module_00/ex02/Account.cpp" "/mnt/c/Users/drag-/Documents/work_dir/cpp_modules_school21/cpp_module_00/ex02/cmake-build-debug/CMakeFiles/untitled.dir/Account.cpp.o"
-  "/mnt/c/Users/drag-/Documents/work_dir/cpp_modules_school21/cpp_module_00/ex02/test.cpp" "/mnt/c/Users/drag-/Documents/work_dir/cpp_modules_school21/cpp_module_00/ex02/cmake-build-debug/CMakeFiles/untitled.dir/test.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/hportife/hportife/cpp_modules_school21/cpp_module_00/ex02/Account.cpp" "CMakeFiles/untitled.dir/Account.cpp.o" "gcc" "CMakeFiles/untitled.dir/Account.cpp.o.d"
+  "/Users/hportife/hportife/cpp_modules_school21/cpp_module_00/ex02/test.cpp" "CMakeFiles/untitled.dir/test.cpp.o" "gcc" "CMakeFiles/untitled.dir/test.cpp.o.d"
   )
 
 # Targets to which this target links.
