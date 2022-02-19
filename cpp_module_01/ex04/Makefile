@@ -1,9 +1,6 @@
-NAME			=	unnecessary_violence
+NAME			=	sed_is_for_losers
 
 SRCS			=	main.cpp\
-					HumanA.cpp\
-					HumanB.cpp\
-					Weapon.cpp\
 
 OBJS			= $(SRCS:.cpp=.o)
 

@@ -2,18 +2,24 @@
 #define EX03_WEAPON_HPP
 
 #include <iostream>
+#include <string>
 
-class Weapon
-{
+using std::string;
+using std::cout;
+using std::endl;
+
+class Weapon {
 private:
-	std::string weapon_type;
-
+	string	_type;
 public:
-	Weapon(std::string weapon);
-	~Weapon();
+	Weapon(string const &type);
+	Weapon(void);
+	~Weapon(void);
 
-	std::string getType(void);
-	void setType(std::string type);
+	string const&	getType(void);
+	void	setType(string type);
 };
+
+
 
 #endif //EX03_WEAPON_HPP

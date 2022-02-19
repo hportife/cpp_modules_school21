@@ -1,9 +1,7 @@
-NAME			=	unnecessary_violence
+NAME			=	Karen-filter
 
 SRCS			=	main.cpp\
-					HumanA.cpp\
-					HumanB.cpp\
-					Weapon.cpp\
+					Karen.cpp\
 
 OBJS			= $(SRCS:.cpp=.o)
 

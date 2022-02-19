@@ -1,9 +1,7 @@
-NAME			=	unnecessary_violence
+NAME			=	Karen_2_0
 
 SRCS			=	main.cpp\
-					HumanA.cpp\
-					HumanB.cpp\
-					Weapon.cpp\
+					Karen.cpp\
 
 OBJS			= $(SRCS:.cpp=.o)
 
