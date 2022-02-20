@@ -35,7 +35,6 @@ int	main(int argc, char **argv)
 		}
 		outfile.close();
 		infile.close();
-		while (1);
 		return (0);
 	}
 	std::cout << "something is wrong with the arguments\n";
