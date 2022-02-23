@@ -1,6 +1,7 @@
-NAME			=	#some_name
+NAME			=	 Now_we_re_talking
 
-SRCS			=	#some_srcs
+SRCS			=	main.cpp\
+					Fixed.cpp
 
 OBJS			= $(SRCS:.cpp=.o)
 

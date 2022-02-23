@@ -1,6 +1,9 @@
-NAME			=	#some_name
+NAME			=	BSP
 
-SRCS			=	#some_srcs
+SRCS			=	main.cpp\
+					Fixed.cpp\
+					Point.cpp\
+					bsp.cpp
 
 OBJS			= $(SRCS:.cpp=.o)
 

@@ -1,6 +1,7 @@
-NAME			=	#some_name
+NAME			=	Towards_a_more_useful_fixed-point_number_class
 
-SRCS			=	#some_srcs
+SRCS			=	main.cpp\
+					Fixed.cpp
 
 OBJS			= $(SRCS:.cpp=.o)
 

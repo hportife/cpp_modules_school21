@@ -1,6 +1,7 @@
-NAME			=	#some_name
+NAME			=	My_first_class_in_orthodox_canonical_form
 
-SRCS			=	#some_srcs
+SRCS			=	main.cpp\
+					Fixed.cpp
 
 OBJS			= $(SRCS:.cpp=.o)
 
