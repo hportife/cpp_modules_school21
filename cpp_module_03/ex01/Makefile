@@ -1,6 +1,8 @@
-NAME			=	#some_name
+NAME			=	Serena_my_love!
 
-SRCS			=	#some_srcs
+SRCS			=	main.cpp\
+					ClapTrap.cpp\
+					ScavTrap.cpp
 
 OBJS			= $(SRCS:.cpp=.o)
 

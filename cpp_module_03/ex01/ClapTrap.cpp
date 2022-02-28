@@ -24,6 +24,18 @@ ClapTrap::ClapTrap(ClapTrap const &some_ct)
 	std::cout << "Copy called\n";
 }
 
+ClapTrap::ClapTrap(std::string name, int hitpoints, int energyPoints, int attackDamage) :
+        name(name),
+        hitPoints(hitpoints),
+        energyPoints(energyPoints),
+        attackDamage(attackDamage)
+{
+    std::cout << "created " << name << " ClapTrap with"
+                << hitpoints << " hp, " << energyPoints
+                << " energy points and " << attackDamage
+                << " attack damage\n";
+}
+
 ClapTrap::~ClapTrap() {std::cout << "Destructor called\n";}
 
 ClapTrap const& ClapTrap::operator=(ClapTrap const& assign)

@@ -1,11 +1,15 @@
-//#include
-//
-//int main(void)
-//{
-//	return (0);
-//}
-//
-//int main(int argc, char **argv)
-//{
-//	return (0);
-//}
+#include "ScavTrap.hpp"
+
+
+int main( void ) {
+    ClapTrap a("Genshiro");
+    ScavTrap b("Nani");
+
+    b.guardGate();
+
+    a.attack("Nani");
+    b.attack("Genshiro");
+    a.beRepaired(10);
+    b.beRepaired(20);
+    return 0;
+}

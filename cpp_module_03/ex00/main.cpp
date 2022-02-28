@@ -1,11 +1,9 @@
-//#include
-//
-//int main(void)
-//{
-//	return (0);
-//}
-//
-//int main(int argc, char **argv)
-//{
-//	return (0);
-//}
+#include "ClapTrap.hpp"
+
+
+int main( void ) {
+    ClapTrap a("Ceila");
+
+    a.attack("Phona");
+    return 0;
+}

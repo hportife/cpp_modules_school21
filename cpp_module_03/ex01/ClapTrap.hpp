@@ -9,6 +9,7 @@ public:
     ClapTrap(void);
     ClapTrap(std::string some_name);
     ClapTrap(ClapTrap const &some_ct);
+    ClapTrap(std::string name, int hitpoints, int energyPoints, int attackDamage);
 
     ~ClapTrap();
 
@@ -18,7 +19,7 @@ public:
     void takeDamage(unsigned int amount);
     void beRepaired(unsigned int amount);
 
-private:
+protected:
     std::string name;
     int hitPoints;
     int energyPoints;

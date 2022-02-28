@@ -1,6 +1,8 @@
-NAME			=	#some_name
+NAME			=	Aaaaand_OPEN!
 
-SRCS			=	#some_srcs
+SRCS			=	main.cpp\
+					ClapTrap.cpp\
+					ClapTrap.hpp
 
 OBJS			= $(SRCS:.cpp=.o)
 
