@@ -1,12 +1,16 @@
-NAME			=	#some_name
+NAME			=	Now_it_s_weird!
 
-SRCS			=	#some_srcs
+SRCS			=	main.cpp\
+					ClapTrap.cpp\
+					FragTrap.cpp\
+					ScavTrap.cpp\
+					DiamondTrap.cpp
 
 OBJS			= $(SRCS:.cpp=.o)
 
 CC				= c++
 RM				= rm -f
-FLG				= -Wall -Wextra -Werror
+FLG				= -Wall -Wextra -Werror -Wshadow
 
 all:			$(NAME)
 
