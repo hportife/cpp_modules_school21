@@ -1,6 +1,9 @@
-NAME			=	#some_name
+NAME			=	Repetitive_work
 
-SRCS			=	#some_srcs
+SRCS			=	main.c\
+					ClapTrap.cpp\
+					FragTrap.cpp\
+					ScavTrap.cpp
 
 OBJS			= $(SRCS:.cpp=.o)
 

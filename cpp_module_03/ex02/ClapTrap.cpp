@@ -38,6 +38,10 @@ ClapTrap::ClapTrap(std::string name, int hitpoints, int energyPoints, int attack
 
 ClapTrap::~ClapTrap() {std::cout << "Destructor called\n";}
 
+std::string	ClapTrap::getName() const {
+    return _name;
+}
+
 ClapTrap const& ClapTrap::operator=(ClapTrap const& assign)
 {
 	this->name = assign.name;
