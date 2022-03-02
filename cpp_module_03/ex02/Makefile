@@ -1,6 +1,6 @@
 NAME			=	Repetitive_work
 
-SRCS			=	main.c\
+SRCS			=	main.cpp\
 					ClapTrap.cpp\
 					FragTrap.cpp\
 					ScavTrap.cpp
