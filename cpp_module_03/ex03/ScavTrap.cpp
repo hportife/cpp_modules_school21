@@ -5,7 +5,7 @@ ScavTrap::ScavTrap(void): ClapTrap("Epmty", 100, 50, 20)
     std::cout << "ScavTrap empty constructor called\n";
 }
 
-ScavTrap::ScavTrap(std::string name) : ClapTrap(name, 100, 50, 20)
+ScavTrap::ScavTrap(std::string name) : ClapTrap(name, 100, 50,  0 of 20)
 {
     std::cout << "ScavTrap " << name << " constructor called\n";
 }

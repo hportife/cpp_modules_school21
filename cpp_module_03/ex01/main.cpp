@@ -1,6 +1,5 @@
 #include "ScavTrap.hpp"
 
-
 int main( void ) {
     ClapTrap a("Slave");
     ScavTrap b("Master");

@@ -1,8 +1,7 @@
 NAME			=	Aaaaand_OPEN!
 
 SRCS			=	main.cpp\
-					ClapTrap.cpp\
-					ClapTrap.hpp
+					ClapTrap.cpp
 
 OBJS			= $(SRCS:.cpp=.o)
 
