@@ -9,7 +9,7 @@ public:
     Cat(void);
     ~Cat(void);
 
-    void makeSound(void);
+    void makeSound(void) const;
 };
 
 

@@ -10,8 +10,8 @@ public:
     Animal(Animal const &);
     ~Animal(void);
 
-    std::string getType(void);
-    void makeSound(void);
+    std::string getType(void) const;
+    virtual void makeSound(void) const;
 
 protected:
     std::string type;

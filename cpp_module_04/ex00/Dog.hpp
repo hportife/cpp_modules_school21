@@ -9,7 +9,7 @@ public:
     Dog(void);
     ~Dog(void);
 
-    void makeSound(void);
+    void makeSound(void) const;
 };
 
 

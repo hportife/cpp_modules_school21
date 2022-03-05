@@ -5,12 +5,12 @@ Cat::Cat(void) : Animal("Cat")
     std::cout << "cat constructor call\n";
 }
 
-Dog::~Dog(void)
+Cat::~Cat(void)
 {
     std::cout << "cat destructor call\n";
 }
 
-void Cat::makeSound(void)
+void Cat::makeSound(void) const
 {
     std::cout << "MEOW!\n";
 }

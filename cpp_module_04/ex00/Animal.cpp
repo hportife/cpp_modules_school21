@@ -15,7 +15,7 @@ Animal::Animal(std::string some_type)
 Animal::Animal(Animal const & tmp)
 {
     *this = tmp;
-    cout << "Animal copy constructor call\n";
+    std::cout << "Animal copy constructor call\n";
 }
 
 Animal::~Animal()
@@ -23,12 +23,12 @@ Animal::~Animal()
     std::cout<< "animal destructor call\n";
 }
 
-std::string Animal::getType(void)
+std::string Animal::getType(void) const
 {
-    return this->type;
+    return type;
 }
 
-void Animal::makeSound(void)
+void Animal::makeSound(void) const
 {
     std::cout << "\"Animal Sounds\"\n";
 }
