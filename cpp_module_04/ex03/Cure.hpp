@@ -1,0 +1,10 @@
+#ifndef CPP_MODULES_SCHOOL21_CURE_HPP
+#define CPP_MODULES_SCHOOL21_CURE_HPP
+
+
+class Cure {
+
+};
+
+
+#endif //CPP_MODULES_SCHOOL21_CURE_HPP

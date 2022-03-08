@@ -1,0 +1,10 @@
+#ifndef CPP_MODULES_SCHOOL21_ICE_HPP
+#define CPP_MODULES_SCHOOL21_ICE_HPP
+
+
+class Ice {
+
+};
+
+
+#endif //CPP_MODULES_SCHOOL21_ICE_HPP
