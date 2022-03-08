@@ -20,7 +20,13 @@ Animal::Animal(Animal const & tmp)
 
 Animal::~Animal()
 {
-    std::cout<< "animal destructor call\n";
+    std::cout<< "Animal destructor call\n";
+}
+
+Animal const& Animal::operator=(Animal const& assign) {
+	this->type = assign.type;
+	std::cout << "Animal [=] operator called\n";
+	return *this;
 }
 
 std::string Animal::getType(void) const

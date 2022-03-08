@@ -10,6 +10,8 @@ public:
     Animal(Animal const &);
     ~Animal(void);
 
+    Animal const& operator=(Animal const &);
+
     std::string getType(void) const;
     virtual void makeSound(void) const;
 

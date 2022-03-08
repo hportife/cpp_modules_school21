@@ -1,12 +1,18 @@
-NAME			= some_name
+NAME			=	Abstract_class
 
 SRCS			=	main.cpp\
+					Animal.cpp\
+					Cat.cpp\
+					Dog.cpp\
+					WrongAnimal.cpp\
+                    WrongCat.cpp\
+                    Brain.cpp
 
 OBJS			= $(SRCS:.cpp=.o)
 
 CC				= c++
 RM				= rm -f
-FLG				= -Wall -Wextra -Werror
+FLG				= -Wall -Wextra -Werror -Wshadow
 
 all:			$(NAME)
 
