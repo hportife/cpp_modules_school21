@@ -2,6 +2,9 @@
 #define CPP_MODULES_SCHOOL21_AMATERIA_HPP
 
 #include "iostream"
+#include "ICharacter.hpp"
+
+class ICharacter;
 
 class AMateria {
 protected:
@@ -19,6 +22,5 @@ public:
 	virtual AMateria* clone() const = 0;
 	virtual void use(ICharacter& target);
 };
-
 
 #endif //CPP_MODULES_SCHOOL21_AMATERIA_HPP
