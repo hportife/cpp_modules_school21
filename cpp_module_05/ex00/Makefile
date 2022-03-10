@@ -1,4 +1,4 @@
-NAME			= some_name
+NAME			= Mommy_when_I_grow_up_I_want_to_be_a_bureaucrat!
 
 SRCS			=	main.cpp\
 
