@@ -1,8 +1,9 @@
 #ifndef CPP_MODULES_SCHOOL21_CHARACTER_HPP
 #define CPP_MODULES_SCHOOL21_CHARACTER_HPP
 
-#include "AMateria.hpp"
 #include "ICharacter.hpp"
+#include "Ice.hpp"
+#include "Cure.hpp"
 
 class Character : public ICharacter
 {
@@ -10,7 +11,6 @@ private:
     std::string name;
     AMateria    *invetory[4];
     int         number;
-public:
 public:
     Character();
     Character(std::string const & name);

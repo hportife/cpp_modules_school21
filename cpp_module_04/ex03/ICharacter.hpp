@@ -1,6 +1,10 @@
 #ifndef CPP_MODULES_SCHOOL21_ICHARACTER_HPP
 #define CPP_MODULES_SCHOOL21_ICHARACTER_HPP
 
+#include "iostream"
+
+class AMateria;
+
 class ICharacter
 {
 public:
@@ -10,6 +14,5 @@ public:
 	virtual void unequip(int idx) = 0;
 	virtual void use(int idx, ICharacter& target) = 0;
 };
-
 
 #endif //CPP_MODULES_SCHOOL21_ICHARACTER_HPP

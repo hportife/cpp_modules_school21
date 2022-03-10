@@ -7,7 +7,7 @@ AMateria::AMateria()
 
 AMateria::AMateria(const std::string &type)
 {
-	type = type;
+    this->type = type;
 	std::cout << "DBG: AMateria typed constructor called\n";
 }
 
