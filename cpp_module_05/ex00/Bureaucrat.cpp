@@ -71,3 +71,4 @@ ostream&	operator<<(ostream &out, const Bureaucrat &bur) {
     out << bur.getName() << ", bureaucrat grade " << bur.getGrade();
     return (out);
 }
+//test
