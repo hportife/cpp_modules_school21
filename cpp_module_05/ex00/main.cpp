@@ -13,7 +13,7 @@ int	main() {
         std::cout << a << std::endl;
         std::cout << "ALL OK" << std::endl;
     }
-    catch (exception & ex)
+    catch (std::exception & ex)
     {
         std::cout << ex.what() << std::endl;
     }
@@ -32,7 +32,7 @@ int	main() {
         std::cout << b << std::endl;
         std::cout << "ALL OK" << std::endl;
     }
-    catch (exception & ex)
+    catch (std::exception & ex)
     {
         std::cout << ex.what() << std::endl;
     }
