@@ -1,6 +1,7 @@
 #ifndef CPP_MODULES_SCHOOL21_BUREAUCRAT_HPP
 #define CPP_MODULES_SCHOOL21_BUREAUCRAT_HPP
 
+#include "Form.hpp"
 #include <iostream>
 #include <exception>
 
@@ -19,6 +20,7 @@ public:
     int		getGrade() const;
     void	gradeIncrement();
     void	gradeDecrement();
+	void 	signForm(Form &form);
 
     class GradeTooHighException : public std::exception {
     public:
