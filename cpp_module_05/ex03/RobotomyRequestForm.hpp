@@ -20,6 +20,7 @@ public:
 
     void info() const;
     void info(ShrubberyCreationForm &shubbery) const;
+	const std::string &getTarget() const;
 };
 
 

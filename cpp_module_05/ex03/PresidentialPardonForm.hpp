@@ -19,6 +19,7 @@ public:
 	PresidentialPardonForm(const PresidentialPardonForm &other);
 	void info(ShrubberyCreationForm &shubbery) const;
 	void info() const;
+	const std::string &getTarget() const;
 };
 
 

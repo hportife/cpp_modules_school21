@@ -17,6 +17,7 @@ public:
     virtual ~Form();
 
     virtual void execute(const Bureaucrat &executor) const;
+	virtual	const std::string &getTarget() const = 0;
 
     Form &operator=(const Form &other);
     Form(const Form &other);

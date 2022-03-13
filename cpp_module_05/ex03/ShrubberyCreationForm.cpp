@@ -58,3 +58,8 @@ void ShrubberyCreationForm::dopPrint(char s, int len, std::ofstream *tree) const
 void ShrubberyCreationForm::info() const {
 	this->printTrees();
 }
+
+const std::string &ShrubberyCreationForm::getTarget() const
+{
+	return this->target;
+}

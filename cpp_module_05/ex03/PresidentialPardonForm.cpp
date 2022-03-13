@@ -27,3 +27,7 @@ void PresidentialPardonForm::info(ShrubberyCreationForm &shubbery) const {
 void PresidentialPardonForm::info() const {
 
 }
+const std::string &PresidentialPardonForm::getTarget() const
+{
+	return this->target;
+}

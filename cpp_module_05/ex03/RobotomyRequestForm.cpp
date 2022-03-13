@@ -34,3 +34,7 @@ void RobotomyRequestForm::info(ShrubberyCreationForm &shubbery) const {
 
 void RobotomyRequestForm::info() const {
 }
+const std::string &RobotomyRequestForm::getTarget() const
+{
+	return this->target;
+}

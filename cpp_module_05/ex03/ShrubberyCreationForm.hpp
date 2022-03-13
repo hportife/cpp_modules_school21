@@ -20,6 +20,7 @@ public:
 	void info() const;
 	void dopPrint(char s, int len, std::ofstream *tree) const;
 	void printTrees() const;
+	const std::string &getTarget() const;
 };
 
 
