@@ -1,112 +1,310 @@
 #include "Bureaucrat.hpp"
 #include "Form.hpp"
+#include "ShrubberyCreationForm.hpp"
+#include "RobotomyRequestForm.hpp"
+#include "PresidentialPardonForm.hpp"
 
 int	main() {
-	try
-	{
-		Bureaucrat a("Artemiy", 1);
-		std::cout << a << std::endl;
-		a.gradeDecrement();
-		std::cout << a << std::endl;
-		a.gradeIncrement();
-		std::cout << a << std::endl;
-		a.gradeDecrement();
-		std::cout << a << std::endl;
-		std::cout << "ALL OK" << std::endl;
-	}
-	catch (std::exception & ex)
-	{
-		std::cout << ex.what() << std::endl;
-	}
-	std::cout << "----------------------" << std::endl;
-	try
-	{
-		Bureaucrat b("Vasiliy", 150);
-		std::cout << b << std::endl;
-		b.gradeDecrement();
-		std::cout << b << std::endl;
-		b.gradeIncrement();
-		std::cout << b << std::endl;
-		b.gradeDecrement();
-		std::cout << b << std::endl;
-		b.gradeDecrement();
-		std::cout << b << std::endl;
-		std::cout << "ALL OK" << std::endl;
-	}
-	catch (std::exception & ex)
-	{
-		std::cout << ex.what() << std::endl;
-	}
+	std::cout << std::boolalpha;
 
-	// Bureaucrat c("Petrovich", 151);
-
-	std::cout << "----------------------" << std::endl;
-
-	try
 	{
-		Form b("f1", 0, 15);
-		Form c(b);
-		std::cout << b << std::endl;
-		std::cout << c << std::endl;
+		try
+		{
+			Bureaucrat B1("bureaucrat_1", 135);
+			ShrubberyCreationForm F1("ShrubberyCreationForm");
+			std::cout << B1 << std::endl;
+			std::cout << F1 << std::endl;
+			B1.signForm(F1);
+			B1.execute(F1);
+			std::cout << F1 << std::endl;
+		}
+		catch (const Bureaucrat::GradeTooHighException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (const Bureaucrat::GradeTooLowException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (const Form::GradeTooHighException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (const Form::GradeTooLowException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (...)
+		{
+			std::cerr << "Something strange happened" << std::endl;
+		}
 	}
-	catch (std::exception & ex)
-	{
-		std::cout<< ex.what() << std::endl;
-	}
-
-	std::cout << "----------------------" << std::endl;
-
-	try
-	{
-		Form b("f1", 100, 151);
-		std::cout << b << std::endl;
-	}
-	catch (std::exception & ex)
-	{
-		std::cout<< ex.what()<< std::endl;
-	}
-
-	std::cout << "----------------------" << std::endl;
-
-	try
-	{
-		Form b("f1", 100, 151);
-		std::cout << b << std::endl;
-	}
-	catch (std::exception & ex)
-	{
-		std::cout<< ex.what()<< std::endl;
-	}
-
-	std::cout << "----------------------" << std::endl;
-
 	std::cout << std::endl;
-	Form b("f1", 100, 15);
-	std::cout << std::endl << b << std::endl;
-	Bureaucrat b2("Milan", 10);
-	b2.signForm(b);
-	std::cout << std::endl << b << std::endl;
+	{
+		try
+		{
+			Bureaucrat B1("bureaucrat_2", 145);
+			ShrubberyCreationForm F1("ShrubberyCreationForm2");
+			std::cout << B1 << std::endl;
+			std::cout << F1 << std::endl;
+			B1.signForm(F1);
+			B1.execute(F1);
+			std::cout << F1 << std::endl;
+		}
+		catch (const Bureaucrat::GradeTooHighException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (const Bureaucrat::GradeTooLowException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (const Form::GradeTooHighException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (const Form::GradeTooLowException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (...)
+		{
+			std::cerr << "Something strange happened" << std::endl;
+		}
 
-	std::cout << "----------------------" << std::endl;
-
+	}
 	std::cout << std::endl;
-	Form c("f2", 100, 15);
-	Bureaucrat c2("Valeriy", 100);
-	c2.signForm(c);
-	std::cout << std::endl << c << std::endl;
-	c2.signForm(c);
-	std::cout << std::endl << c << std::endl;
+	{
+		try
+		{
+			Bureaucrat B1("bureaucrat_3", 150);
+			ShrubberyCreationForm F1("ShrubberyCreationForm3");
+			std::cout << B1 << std::endl;
+			std::cout << F1 << std::endl;
+			B1.signForm(F1);
+			B1.execute(F1);
+			std::cout << F1 << std::endl;
+		}
+		catch (const Bureaucrat::GradeTooHighException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (const Bureaucrat::GradeTooLowException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (const Form::GradeTooHighException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (const Form::GradeTooLowException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (...)
+		{
+			std::cerr << "Something strange happened" << std::endl;
+		}
+	}
+	std::cout << "\n--------------------------------------------------------\n" << std::endl;
 
-	std::cout << "----------------------" << std::endl;
-
+	{
+		try
+		{
+			Bureaucrat B("bureaucrat_1", 45);
+			RobotomyRequestForm F("RobotomyRequestForm1");
+			std::cout << B << std::endl;
+			std::cout << F << std::endl;
+			B.signForm(F);
+			B.execute(F);
+			std::cout << F << std::endl;
+		}
+		catch (const Bureaucrat::GradeTooHighException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (const Bureaucrat::GradeTooLowException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (const Form::GradeTooHighException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (const Form::GradeTooLowException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (...)
+		{
+			std::cerr << "Something strange happened" << std::endl;
+		}
+	}
 	std::cout << std::endl;
-	Form e("f3", 100, 15);
-	Bureaucrat e3("Baiden", 101);
-	e3.signForm(e);
-	std::cout << std::endl << e << std::endl;
-	std::cout << e3 << std::endl;
-	e3.gradeIncrement();
-	e3.signForm(e);
+	{
+		try
+		{
+			Bureaucrat B("bureaucrat_2", 72);
+			RobotomyRequestForm F("RobotomyRequestForm2");
+			std::cout << B << std::endl;
+			std::cout << F << std::endl;
+			B.signForm(F);
+			B.execute(F);
+			std::cout << F << std::endl;
+		}
+		catch (const Bureaucrat::GradeTooHighException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (const Bureaucrat::GradeTooLowException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (const Form::GradeTooHighException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (const Form::GradeTooLowException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (...)
+		{
+			std::cerr << "Something strange happened" << std::endl;
+		}
+	}
+	std::cout << std::endl;
+	{
+		try
+		{
+			Bureaucrat B("bureaucrat_3", 80);
+			RobotomyRequestForm F("RobotomyRequestForm3");
+			std::cout << B << std::endl;
+			std::cout << F << std::endl;
+			B.signForm(F);
+			B.execute(F);
+			std::cout << F << std::endl;
+		}
+		catch (const Bureaucrat::GradeTooHighException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (const Bureaucrat::GradeTooLowException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (const Form::GradeTooHighException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (const Form::GradeTooLowException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (...)
+		{
+			std::cerr << "Something strange happened" << std::endl;
+		}
+	}
+	std::cout << "\n--------------------------------------------------------\n" << std::endl;
 
-	return (0);
+	{
+		try
+		{
+			Bureaucrat B("bureaucrat_1", 5);
+			PresidentialPardonForm F("PresidentialPardonForm1");
+			std::cout << B << std::endl;
+			std::cout << F << std::endl;
+			B.signForm(F);
+			B.execute(F);
+			std::cout << F << std::endl;
+		}
+		catch (const Bureaucrat::GradeTooHighException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (const Bureaucrat::GradeTooLowException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (const Form::GradeTooHighException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (const Form::GradeTooLowException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (...)
+		{
+			std::cerr << "Something strange happened" << std::endl;
+		}
+	}
+	std::cout << std::endl;
+	{
+		try
+		{
+			Bureaucrat B("bureaucrat_2", 25);
+			PresidentialPardonForm F("PresidentialPardonForm2");
+			std::cout << B << std::endl;
+			std::cout << F << std::endl;
+			B.signForm(F);
+			B.execute(F);
+			std::cout << F << std::endl;
+		}
+		catch (const Bureaucrat::GradeTooHighException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (const Bureaucrat::GradeTooLowException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (const Form::GradeTooHighException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (const Form::GradeTooLowException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (...)
+		{
+			std::cerr << "Something strange happened" << std::endl;
+		}
+	}
+	std::cout << std::endl;
+	{
+		try
+		{
+			Bureaucrat B("bureaucrat_3", 30);
+			PresidentialPardonForm F("PresidentialPardonForm3");
+			std::cout << B << std::endl;
+			std::cout << F << std::endl;
+			B.signForm(F);
+			B.execute(F);
+			std::cout << F << std::endl;
+		}
+		catch (const Bureaucrat::GradeTooHighException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (const Bureaucrat::GradeTooLowException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (const Form::GradeTooHighException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (const Form::GradeTooLowException &e)
+		{
+			std::cerr << e.what() << std::endl;
+		}
+		catch (...)
+		{
+			std::cerr << "Something strange happened" << std::endl;
+		}
+	}
+	return 0;
 }
