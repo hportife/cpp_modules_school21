@@ -14,6 +14,8 @@ public:
     Form(const std::string &name, const int gradeSign, const int gradeExecute);
     virtual ~Form();
 
+    virtual void execute(const Bureaucrat &executor) const;
+
     Form &operator=(const Form &other);
     Form(const Form &other);
 
@@ -27,6 +29,14 @@ public:
 
     int getGradeExecute() const;
 
+
+    void setFormName(const std::string &formName);
+
+    void setSign(bool sign);
+
+    void setGradeSign(int gradeSign);
+
+    void setGradeExecute(int gradeExecute);
 
     class GradeTooHighException : public std::exception {
     public:

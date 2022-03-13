@@ -1,10 +1,10 @@
 #include "Form.hpp"
 
-Form::Form(const std::string &formName, const int gradeSign, const int gradeExecute) :
-formName(formName),
-sign(false),
-gradeSign(gradeSign),
-gradeExecute(gradeExecute)
+Form::Form(const std::string &formName, const int gradeSign, const int gradeExecute) :  formName(formName),
+                                                                                        sign(false),
+                                                                                        gradeSign(gradeSign),
+                                                                                        gradeExecute(gradeExecute)
+
 {
     if (gradeSign > 150)
         throw Form::GradeTooLowException("Small grade sign");
@@ -17,6 +17,8 @@ gradeExecute(gradeExecute)
 }
 
 Form::~Form() {}
+
+
 
 const std::string &Form::getFormName() const {
     return formName;
@@ -33,6 +35,26 @@ int Form::getGradeSign() const {
 int Form::getGradeExecute() const {
     return gradeExecute;
 }
+
+
+
+void Form::setFormName(const std::string &formName) {
+    Form::formName = formName;
+}
+
+void Form::setSign(bool sign) {
+    Form::sign = sign;
+}
+
+void Form::setGradeSign(int gradeSign) {
+    Form::gradeSign = gradeSign;
+}
+
+void Form::setGradeExecute(int gradeExecute) {
+    Form::gradeExecute = gradeExecute;
+}
+
+
 
 Form &Form::operator=(const Form &other) {
     this->sign = other.isSign();
@@ -87,7 +109,24 @@ const char *Form::GradeTooLowException::what() const throw() {
 
 
 std::ostream &operator<<(std::ostream &os, const Form &form) {
-    os <<"Form name: " << form.getFormName() << ", sign: " << (form.isSign() ? "\033[32m" : "\033[31m") << form.isSign()
+    os <<"Form name: " <<form.getFormName() << ", sign: " << (form.isSign() ? GREEN : RED) << form.isSign() << DEFAULT
     << ", grade sign: " << form.getGradeSign() << ", grade execute: " << form.getGradeExecute();
     return os;
+}
+
+void Form::execute(const Bureaucrat &executor) const {
+    if (executor.getGrade() > this->gradeSign)
+        throw Form::GradeTooLowException("below gradle");
+    if (!this->isSign())
+        throw FormIsNotSignedException("Form not signed");
+}
+
+Form::FormIsNotSignedException::FormIsNotSignedException(const std::string &error) {
+    std::cout << error << std::endl;
+}
+
+Form::FormIsNotSignedException::~FormIsNotSignedException() throw() {}
+
+const char *Form::FormIsNotSignedException::what() const throw() {
+    return this->error.c_str();
 }
