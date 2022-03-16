@@ -1,6 +1,6 @@
-NAME			= some_name
+NAME			=	Serialization
 
-SRCS			=	main.cpp\
+SRCS			=	main.cpp
 
 OBJS			= $(SRCS:.cpp=.o)
 

@@ -1,4 +1,4 @@
-NAME			= some_name
+NAME			=	Conversion_of_scalar_types
 
 SRCS			=	main.cpp\
 
