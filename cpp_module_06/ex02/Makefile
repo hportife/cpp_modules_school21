@@ -1,4 +1,4 @@
-NAME			= some_name
+NAME			=	Identify_real_type
 
 SRCS			=	main.cpp\
 
