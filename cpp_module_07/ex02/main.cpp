@@ -1,58 +1,50 @@
-#include <iostream>
-#include "Array.hpp"
+#include "easyfind.hpp"
 
-#define MAX_VAL 750
-int main(int, char**)
+template<typename T>
+void printing(T arr)
 {
-    Array<int> numbers(MAX_VAL);
-    int* mirror = new int[MAX_VAL];
-    std::cout << "Done";
-    srand(time(NULL));
-    for (int i = 0; i < MAX_VAL; i++)
-    {
-        const int value = rand();
-        numbers[i] = value;
-        mirror[i] = value;
-        // std::cout << "number [" << i << "] = " << value << " ";
-    }
+    for (typename T::iterator i = arr.begin(); i < arr.end(); i++)
+        std::cout << *i << " ";
     std::cout << std::endl;
-    //SCOPE
-    {
-        Array<int> tmp = numbers;
-        Array<int> test(tmp);
-    }
+}
 
-    for (int i = 0; i < MAX_VAL; i++)
+int main()
+{
     {
-        if (mirror[i] != numbers[i])
+        try
         {
-            std::cerr << "didn't save the same value!!" << std::endl;
-            return 1;
+            std::vector<int> vector;
+            std::vector<int>::iterator v_it;
+            int num = 3;
+            for (int i = 0; i < 10; ++i)
+                vector.push_back(i);
+            for (v_it = vector.begin(); v_it != vector.end(); ++v_it)
+                std::cout << *v_it << ' ';
+            std::cout << "\nsearch = " << num << std::endl;
+            v_it = easyfind(vector, num);
+            std::cout << GREEN << "easyfind = " << num << DEFAULT << std::endl;
+        }
+        catch (std::exception &e) {
+            std::cerr << RED << "Not found" << DEFAULT << std::endl;
         }
     }
-    std::cout << numbers[0] << std::endl;
-    try
+    std::cout << std::endl;
     {
-        numbers[-2] = 0;
+        try
+        {
+            std::vector<int> vector;
+            std::vector<int>::iterator v_it;
+            int num = 13;
+            for (int i = 0; i < 10; ++i)
+                vector.push_back(i);
+            for (v_it = vector.begin(); v_it != vector.end(); ++v_it)
+                std::cout << *v_it << ' ';
+            std::cout << "\nsearch = " << num << std::endl;
+            v_it = easyfind(vector, num);
+            std::cout << GREEN << "easyfind = " << num << DEFAULT << std::endl;
+        }
+        catch (std::exception &e) {
+            std::cerr << RED << "easyfind = Not found" << DEFAULT << std::endl;
+        }
     }
-    catch(const std::exception& e)
-    {
-        std::cerr << e.what() << '\n';
-    }
-    try
-    {
-        numbers[MAX_VAL] = 0;
-    }
-    catch(const std::exception& e)
-    {
-        std::cerr << e.what() << '\n';
-    }
-
-    for (int i = 0; i < MAX_VAL; i++)
-    {
-        numbers[i] = rand();
-    }
-
-    delete [] mirror;//
-    return 0;
 }
