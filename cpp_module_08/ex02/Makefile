@@ -1,7 +1,6 @@
-NAME			=	Span
+NAME			=	Mutated_abomination
 
-SRCS			=	main.cpp\
-					Span.cpp
+SRCS			=	main.cpp
 
 OBJS			= $(SRCS:.cpp=.o)
 
